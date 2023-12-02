@@ -125,6 +125,7 @@ nav{
 #content{
     width: 100%;
     height: 300px;
+    margin-top: 20px;
 }
 
 #tab_menu{
@@ -184,6 +185,12 @@ nav{
     display: inline;
 }
 
+#gallery img{
+    width: 125px;
+    height: 300px;
+    object-fit: cover;
+}
+
 #tab1:checked~#notice, #tab2:checked~#gallery{
     display: block;
 }
@@ -192,7 +199,46 @@ nav{
     float: right;
     width: 600px;
     height: 100%;
-    background-color: skyblue;
+    margin-top: 15px;
+    /*background-color: skyblue;*/
+}
+
+#links ul{
+    padding: 0;
+    overflow: hidden;
+}
+
+#links ul li{
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#link ul li a span{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 1px solid #ddd;
+    line-height: 150px;
+}
+
+#quick-icon1{
+    background-image: url("icon-1.jpg");
+}
+#quick-icon2{
+    background-image: url("icon-2.jpg");
+}
+#quick-icon3{
+    background-image: url("icon-3.jpg");
+}
+
+#links ul li a p{
+    margin-top: 15px;
+    font-weight: 600;
+    color: #666;
 }
 
 #footer{
