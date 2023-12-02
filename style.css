@@ -131,7 +131,61 @@ nav{
     float: left;
     width: 600px;
     height: 100%;
-    background-color: violet;
+    margin-top: 10px;
+    /*background-color: violet;*/
+}
+
+#tab_menu input[type="radio"]{
+    display: none;
+}
+
+#tab_menu label {
+    display: inline-block;
+    margin: 0 0;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #aaa;
+    border: 1px solid transparent;
+}
+
+#tab_menu label:hover{
+    columns: #222;
+    cursor: pointer;
+}
+
+#tab_menu input:checked + label{
+    color: #b00;
+    border: 1px solid #ddd;
+    background-color: #eee;
+}
+
+.tab_content{
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid  #ddd;
+}
+
+.tab_content h2{
+    display:none;
+}
+
+#notice ul{
+    list-style: disc;
+    margin-left: 30px;
+}
+
+#notice ul li{
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+#gallery ul li{
+    display: inline;
+}
+
+#tab1:checked~#notice, #tab2:checked~#gallery{
+    display: block;
 }
 
 #links{
