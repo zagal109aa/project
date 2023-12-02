@@ -1,4 +1,3 @@
-
 var current=0;
 Show_Slide(current);
 function Show_Slide(n){
