@@ -1,8 +1,8 @@
 var current=0;
-Show_Slide(current);
-function Show_Slide(n){
+Show_Slide();
+function Show_Slide(){
     var slides = document.querySelectorAll("#slides>img");
-    for(let i=0;<slides.length;i++){
+    for(let i=0; i<slides.length; i++){
         slides[i].style.display="none";
     }
     current++;
